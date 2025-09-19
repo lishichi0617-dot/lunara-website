@@ -1,20 +1,64 @@
-/* 整体页面样式 */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  line-height: 1.6;
   text-align: center;
-  background-color: #fff;
 }
 
-/* 横幅容器 */
+/* 横幅 */
 .banner {
   width: 100%;
   overflow: hidden;
 }
 
-/* 横幅图像 */
 .wide-banner {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* Section 样式 */
+section {
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Muse 区域 */
+.muse-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.muse-gallery img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* 产品区域 */
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.product-gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  padding: 20px 10px;
 }
