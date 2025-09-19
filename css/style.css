@@ -6,14 +6,6 @@ body {
   text-align: center;
 }
 
-/* LOGO */
-.logo {
-  display: block;
-  margin: 20px auto;
-  max-width: 150px;
-  height: auto;
-}
-
 /* 横幅容器：允许横向滚动 */
 .banner {
   width: 100%;
