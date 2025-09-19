@@ -1,28 +1,20 @@
-/* 基础样式 */
+/* 整体页面样式 */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   text-align: center;
+  background-color: #fff;
 }
 
-/* 横幅容器：允许横向滚动 */
+/* 横幅容器 */
 .banner {
   width: 100%;
-  overflow-x: auto;   /* 开启横向滚动 */
+  overflow: hidden;
 }
 
-/* 横幅图片：保持原始比例，可超出屏幕 */
+/* 横幅图像 */
 .wide-banner {
-  display: block;
-  max-width: none;    /* 取消默认缩放 */
-  width: 100vw;       /* 至少与屏幕一样宽 */
+  width: 100%;
   height: auto;
-}
-
-/* 页脚 */
-footer {
-  background: #f4f4f4;
-  padding: 10px;
-  margin-top: 20px;
+  display: block;
 }
