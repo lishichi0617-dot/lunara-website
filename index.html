@@ -1,90 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LUNARA - Moonlight Beauty</title>
-  <style>
-    body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background: #0b0f2a; color: #fff; }
-    section { padding: 80px 20px; text-align: center; }
-    h1, h2, h3 { margin-bottom: 20px; }
-    .banner { height: 100vh; display: flex; align-items: center; justify-content: center; background: url('images/banner.jpg') no-repeat center/cover; }
-    .banner h1 { font-size: 36px; max-width: 800px; }
-    .btn { margin-top: 20px; padding: 10px 20px; background: #fff; color: #000; border-radius: 4px; text-decoration: none; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; }
-    .card { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px; }
-    .card img { width: 100%; border-radius: 8px; }
-    .carousel { display: flex; overflow-x: auto; gap: 20px; }
-    .carousel img { height: 300px; border-radius: 12px; }
-    .contact-form { max-width: 500px; margin: 0 auto; text-align: left; }
-    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; border: none; border-radius: 6px; }
-    .contact-form button { padding: 10px 20px; background: #fff; color: #000; border: none; border-radius: 6px; cursor: pointer; }
-  </style>
+  <title>我的网站</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- LOGO -->
+  <header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+  </header>
 
-  <!-- Banner -->
-  <section class="banner">
-    <div>
-      <h1>LUNARA —— 달빛 여신의 영감, 달빛처럼 순수하고 영원한 아름다움.<br><small>Inspired by the Goddess of Moonlight</small></h1>
-      <a href="#brand" class="btn">Explore More</a>
-    </div>
-  </section>
+  <!-- 大横幅图 -->
+  <div class="banner">
+    <img src="images/banner.jpg" alt="大横幅" class="wide-banner">
+  </div>
 
-  <!-- Brand Philosophy -->
-  <section id="brand">
-    <h2>Brand Philosophy</h2>
-    <p>LUNARA는 달빛 여신에 대한 경외심에서 탄생했습니다.<br>
-    그녀는 순수함, 우아함, 그리고 강인함을 상징하며 이는 LUNARA가 항상 고수하는 브랜드 철학입니다.</p>
-  </section>
+  <!-- 主要内容 -->
+  <main>
+    <h1>欢迎来到我的网站</h1>
+    <p>这里是页面的示例内容。</p>
+  </main>
 
-  <!-- About Us -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>한국에서 시작된 뷰티 브랜드 LUNARA는 자연과 과학을 결합하여<br>
-    아시아 여성의 피부에 적합한 고급 화장품을 연구·개발하고 있습니다.</p>
-  </section>
-
-  <!-- Products -->
-  <section id="products">
-    <h2>Our Collections</h2>
-    <div class="grid">
-      <div class="card"><img src="images/product1.jpg"><h3>Moonlight Hair Mask</h3><p>2분 영양, 매끄러운 머릿결</p></div>
-      <div class="card"><img src="images/product2.jpg"><h3>Moonlight Cream</h3><p>피부 영양, 오래가는 보습</p></div>
-      <div class="card"><img src="images/product3.jpg"><h3>Moonlight Lip Tint</h3><p>부드러운 벨벳 텍스처</p></div>
-      <div class="card"><img src="images/product4.jpg"><h3>Moonlight Mask</h3><p>깊은 보습, 맑은 피부</p></div>
-      <div class="card"><img src="images/product5.jpg"><h3>Moonlight Essence</h3><p>피부결 개선, 집중 케어</p></div>
-      <div class="card"><img src="images/product6.jpg"><h3>Moonlight Cleanser</h3><p>순한 세정, 촉촉한 피부</p></div>
-      <div class="card"><img src="images/product7.jpg"><h3>Moonlight Shampoo</h3><p>건강한 모발, 산뜻함</p></div>
-      <div class="card"><img src="images/product8.jpg"><h3>Moonlight Body Wash</h3><p>은은한 향, 촉촉한 피부</p></div>
-      <div class="card"><img src="images/product9.jpg"><h3>Moonlight Body Lotion</h3><p>부드럽게 스며드는 수분</p></div>
-      <div class="card"><img src="images/product10.jpg"><h3>Moonlight Lipstick</h3><p>선명한 발색, 오래가는 컬러</p></div>
-    </div>
-  </section>
-
-  <!-- Muse -->
-  <section id="muse">
-    <h2>LUNARA Muse</h2>
-    <p>우리의 브랜드 뮤즈는 LUNARA가 상징하는 우아함과 자신감을 대표합니다.</p>
-    <div class="carousel">
-      <img src="images/muse1.jpg">
-      <img src="images/muse2.jpg">
-      <img src="images/muse3.jpg">
-      <img src="images/muse4.jpg">
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-form">
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="Email">
-      <textarea rows="5" placeholder="Message"></textarea>
-      <button>Send</button>
-    </div>
-    <p>Website: lunara.dpdns.org</p>
-  </section>
-
+  <!-- 底部 -->
+  <footer>
+    <p>版权所有 &copy; 2025</p>
+  </footer>
 </body>
 </html>
