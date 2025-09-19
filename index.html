@@ -3,76 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LUNARA - Moonlight Series</title>
-  <!-- 样式表路径修正 -->
+  <title>LUNARA - Moonlight Beauty</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background: #0b0f2a; color: #fff; }
+    section { padding: 80px 20px; text-align: center; }
+    h1, h2, h3 { margin-bottom: 20px; }
+    .banner { height: 100vh; display: flex; align-items: center; justify-content: center; background: url('images/banner.jpg') no-repeat center/cover; }
+    @media (orientation: portrait) {
+      .banner { background: url('images/banner-portrait.jpg') no-repeat center/cover; }
+    }
+    .banner h1 { font-size: 36px; max-width: 800px; text-shadow: 0 4px 8px rgba(0,0,0,0.6); }
+    .btn { margin-top: 20px; padding: 10px 20px; background: #fff; color: #000; border-radius: 4px; text-decoration: none; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; }
+    .card { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px; }
+    .card img { width: 100%; border-radius: 8px; }
+    .carousel { display: flex; overflow-x: auto; gap: 20px; }
+    .carousel img { height: 300px; border-radius: 12px; }
+    .contact-form { max-width: 500px; margin: 0 auto; text-align: left; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; border: none; border-radius: 6px; }
+    .contact-form button { padding: 10px 20px; background: #fff; color: #000; border: none; border-radius: 6px; cursor: pointer; }
+  </style>
 </head>
 <body>
-  <!-- 首页横幅 -->
+
+  <!-- Banner -->
   <section class="banner">
-    <picture>
-      <!-- 竖屏优先 -->
-      <source srcset="images/banner-portrait.jpg" media="(orientation: portrait)">
-      <img src="images/banner.jpg" alt="Moonlight Banner" class="banner-img">
-    </picture>
-  </section>
-
-  <!-- 品牌介绍 -->
-  <section class="brand-philosophy">
-    <h2>Brand Philosophy ｜ 브랜드 철학</h2>
-    <p>
-      LUNARA draws inspiration from the moonlight — pure, elegant, and resilient.  
-      루나라의 모든 제품은 달빛의 영감을 받아, 순수함과 우아함, 그리고 강인함을 담아냅니다.
-    </p>
-  </section>
-
-  <!-- 关于我们 -->
-  <section class="about-us">
-    <h2>About Us ｜ 우리 소개</h2>
-    <p>
-      Founded with the spirit of Korean craftsmanship, LUNARA is more than beauty —  
-      it is confidence, radiance, and timeless elegance.  
-      한국의 장인 정신으로 탄생한 루나라는 단순한 뷰티 브랜드가 아니라,  
-      자신감과 빛나는 아름다움, 그리고 영원한 우아함을 상징합니다.
-    </p>
-  </section>
-
-  <!-- 产品展示 -->
-  <section class="products">
-    <h2>Moonlight Collection ｜ 달빛 컬렉션</h2>
-    <div class="product-grid">
-      <div class="product"><img src="images/product1.jpg" alt="Moonlight Hair Mask"><p>月光发膜</p></div>
-      <div class="product"><img src="images/product2.jpg" alt="Moonlight Cream"><p>月光面霜</p></div>
-      <div class="product"><img src="images/product3.jpg" alt="Moonlight Lipstick"><p>月光口红</p></div>
-      <div class="product"><img src="images/product4.jpg" alt="Moonlight Tint"><p>月光唇釉</p></div>
-      <div class="product"><img src="images/product5.jpg" alt="Moonlight Body Lotion"><p>月光身体乳</p></div>
-      <div class="product"><img src="images/product6.jpg" alt="Moonlight Serum"><p>月光精华液</p></div>
-      <div class="product"><img src="images/product7.jpg" alt="Moonlight Face Wash"><p>月光洗面奶</p></div>
-      <div class="product"><img src="images/product8.jpg" alt="Moonlight Shampoo"><p>月光洗发水</p></div>
-      <div class="product"><img src="images/product9.jpg" alt="Moonlight Shower Gel"><p>月光沐浴露</p></div>
+    <div>
+      <h1>LUNARA — Inspired by the Goddess of Moonlight<br><small>달의 여신에게서 영감을 받은 아름다움</small></h1>
+      <a href="#brand" class="btn">Explore More</a>
     </div>
   </section>
 
-  <!-- 模特展示 -->
-  <section class="muses">
-    <h2>Muses ｜ 뮤즈</h2>
-    <div class="muse-grid">
-      <img src="images/muse1.jpg" alt="Muse 1">
-      <img src="images/muse2.jpg" alt="Muse 2">
-      <img src="images/muse3.jpg" alt="Muse 3">
-      <img src="images/muse4.jpg" alt="Muse 4">
+  <!-- Brand Philosophy -->
+  <section id="brand">
+    <h2>Brand Philosophy | 브랜드 철학</h2>
+    <p>
+      LUNARA is born from admiration for the Moonlight Goddess.  
+      She symbolizes purity, elegance, and resilience.  
+      <br><br>
+      루나라는 달의 여신에서 영감을 얻어,  
+      순수함, 우아함, 그리고 강인함을 상징합니다.
+    </p>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us | 브랜드 소개</h2>
+    <p>
+      As a Korean luxury beauty brand, LUNARA blends centuries of Eastern wisdom  
+      with modern cosmetic science. Founded with the vision of bringing  
+      “moonlight purity” to skincare, our products carry the philosophy  
+      of timeless elegance.  
+      <br><br>
+      루나라는 한국의 프리미엄 뷰티 브랜드로,  
+      오랜 동양의 지혜와 현대 과학을 결합하여  
+      피부에 달빛 같은 순수함을 선사합니다.
+      <br><br>
+      Since its origins, LUNARA has stood for **heritage and innovation**.  
+      We continue to create formulas tailored to Asian women,  
+      while expanding our global influence as a symbol of K-Beauty excellence.  
+      <br><br>
+      루나라는 전통과 혁신을 아우르며,  
+      아시아 여성의 아름다움에 맞춘 제품을 개발하고,  
+      K-Beauty의 세계적 아이콘으로 성장하고 있습니다.
+    </p>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <h2>Our Collections | 제품 시리즈</h2>
+    <div class="grid">
+      <div class="card"><img src="images/product1.jpg"><h3>Moonlight Hair Mask</h3><p>Hair revitalization | 모발 활력</p></div>
+      <div class="card"><img src="images/product2.jpg"><h3>Moonlight Cream</h3><p>Deep nourishment | 영양 크림</p></div>
+      <div class="card"><img src="images/product3.jpg"><h3>Moonlight Lip Tint</h3><p>Velvet touch | 벨벳 틴트</p></div>
+      <div class="card"><img src="images/product4.jpg"><h3>Moonlight Mask</h3><p>Hydrating care | 보습 마스크</p></div>
+      <div class="card"><img src="images/product5.jpg"><h3>Moonlight Essence</h3><p>Skin renewal | 에센스</p></div>
+      <div class="card"><img src="images/product6.jpg"><h3>Moonlight Cleanser</h3><p>Gentle cleansing | 클렌저</p></div>
+      <div class="card"><img src="images/product7.jpg"><h3>Moonlight Shampoo</h3><p>Strong & smooth hair | 샴푸</p></div>
+      <div class="card"><img src="images/product8.jpg"><h3>Moonlight Body Wash</h3><p>Refreshing body care | 바디워시</p></div>
+      <div class="card"><img src="images/product9.jpg"><h3>Moonlight Lipstick</h3><p>Classic colors | 립스틱</p></div>
+      <div class="card"><img src="images/product10.jpg"><h3>Moonlight Body Lotion</h3><p>Silky skin | 바디 로션</p></div>
     </div>
   </section>
 
-  <!-- 留言 -->
-  <section class="contact">
-    <h2>Leave a Message ｜ 메시지 남기기</h2>
-    <form>
-      <input type="text" placeholder="Your Name ｜ 이름" required>
-      <input type="email" placeholder="Your Email ｜ 이메일" required>
-      <textarea placeholder="Your Message ｜ 메시지" required></textarea>
-      <button type="submit">Submit ｜ 제출하기</button>
-    </form>
+  <!-- Muse -->
+  <section id="muse">
+    <h2>LUNARA Muse | 브랜드 뮤즈</h2>
+    <p>
+      Our muses embody elegance and confidence, shining like the eternal moonlight.  
+      <br><br>
+      루나라의 뮤즈는 우아함과 자신감을 상징하며, 영원한 달빛처럼 빛납니다.
+    </p>
+    <div class="carousel">
+      <img src="images/muse1.jpg">
+      <img src="images/muse2.jpg">
+      <img src="images/muse3.jpg">
+      <img src="images/muse4.jpg">
+    </div>
   </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us | 문의하기</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Name | 이름">
+      <input type="email" placeholder="Email">
+      <textarea rows="5" placeholder="Message | 메시지"></textarea>
+      <button>Send</button>
+    </div>
+    <p>Website: lunara.dpdns.org</p>
+  </section>
+
 </body>
 </html>
