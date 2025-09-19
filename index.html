@@ -3,32 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LUNARA</title>
+  <title>LUNARA - Moonlight Beauty</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 大横幅图 -->
-  <div class="banner">
-    <img src="images/banner.jpg" alt="大横幅" class="wide-banner">
-  </div>
 
-  <!-- Brand Philosophy -->
-  <section id="philosophy">
-    <h2>Brand Philosophy</h2>
-    <p>LUNARA represents purity, elegance, and resilience. We believe that true beauty shines when women feel confident and natural, just like the gentle glow of the moon. Our mission is to empower every woman with high-quality products that combine modern science with timeless grace.</p>
+  <!-- Banner 横幅 -->
+  <section class="banner">
+    <picture>
+      <!-- 竖屏 -->
+      <source srcset="images/banner-portrait.jpg" media="(max-aspect-ratio: 3/4)">
+      <!-- 横屏 -->
+      <img src="images/banner.jpg" alt="LUNARA Banner">
+    </picture>
   </section>
 
-  <!-- About Us -->
+  <!-- Brand Philosophy 品牌理念 -->
+  <section id="brand">
+    <h2>브랜드 철학 (Brand Philosophy)</h2>
+    <p>
+      루나라(LUNARA)는 달의 여신에게서 영감을 받아 탄생했습니다.  
+      그녀는 순수함, 우아함, 그리고 강인함을 상징하며, 이는 곧 루나라가 추구하는 철학이기도 합니다.  
+      우리의 목표는 모든 여성이 일상 속에서 달빛처럼 빛나는 자신감을 느낄 수 있도록 하는 것입니다.
+    </p>
+  </section>
+
+  <!-- About Us 关于我们 -->
   <section id="about">
     <h2>About Us</h2>
-    <p>Founded with the vision of blending Korean skincare expertise with global beauty trends, LUNARA has grown into a trusted brand for women worldwide. Our name, inspired by the moon, symbolizes light, renewal, and feminine strength. With every product, we strive to honor tradition while embracing innovation—creating beauty solutions that stand the test of time.</p>
-    <p>From nourishing haircare to rejuvenating skincare, each item reflects our dedication to quality and care. Our journey is built on values of authenticity and sustainability, ensuring that beauty not only enhances appearance but also respects nature and culture.</p>
+    <p>
+      루나라는 한국에서 시작된 하이엔드 뷰티 브랜드로, 자연의 순수함과 첨단 기술을 결합하여  
+      아시아 여성의 피부에 최적화된 스킨케어와 메이크업 솔루션을 제공합니다.  
+      우리의 역사는 단순한 화장품을 넘어, 여성들이 아름다움과 자신감을 되찾을 수 있도록 돕는 여정입니다.
+    </p>
   </section>
 
-  <!-- Muse Section -->
-  <section id="muses">
-    <h2>Our Muses</h2>
-    <div class="muse-gallery">
+  <!-- Products 产品展示 -->
+  <section id="products">
+    <h2>Our Collections</h2>
+    <div class="grid">
+      <div class="card"><img src="images/product1.jpg" alt=""><h3>Moonlight Hair Mask</h3><p>Silky & Nourishing</p></div>
+      <div class="card"><img src="images/product2.jpg" alt=""><h3>Moonlight Cream</h3><p>Hydrating & Repairing</p></div>
+      <div class="card"><img src="images/product3.jpg" alt=""><h3>Moonlight Lip Tint</h3><p>Velvet & Long-lasting</p></div>
+      <div class="card"><img src="images/product4.jpg" alt=""><h3>Moonlight Mask</h3><p>Deep Moisturizing</p></div>
+      <div class="card"><img src="images/product5.jpg" alt=""><h3>Moonlight Essence</h3><p>Brightening & Smoothing</p></div>
+      <div class="card"><img src="images/product6.jpg" alt=""><h3>Moonlight Cleanser</h3><p>Gentle Cleansing</p></div>
+      <div class="card"><img src="images/product7.jpg" alt=""><h3>Moonlight Shampoo</h3><p>Refreshing & Strengthening</p></div>
+      <div class="card"><img src="images/product8.jpg" alt=""><h3>Moonlight Body Wash</h3><p>Moisturizing & Scented</p></div>
+      <div class="card"><img src="images/product9.jpg" alt=""><h3>Moonlight Body Lotion</h3><p>Soft & Smooth Skin</p></div>
+      <div class="card"><img src="images/product10.jpg" alt=""><h3>Moonlight Lipstick</h3><p>Elegant & Vibrant</p></div>
+    </div>
+  </section>
+
+  <!-- Muse 模特展示 -->
+  <section id="muse">
+    <h2>LUNARA Muse</h2>
+    <p>
+      루나라의 뮤즈는 우아함과 자신감을 상징합니다.  
+      그녀들의 빛은 달빛처럼 영원히 여성의 아름다움을 비춥니다.
+    </p>
+    <div class="carousel">
       <img src="images/muse1.jpg" alt="Muse 1">
       <img src="images/muse2.jpg" alt="Muse 2">
       <img src="images/muse3.jpg" alt="Muse 3">
@@ -36,26 +70,17 @@
     </div>
   </section>
 
-  <!-- Product Section -->
-  <section id="products">
-    <h2>Our Products</h2>
-    <div class="product-gallery">
-      <img src="images/product1.jpg" alt="Product 1">
-      <img src="images/product2.jpg" alt="Product 2">
-      <img src="images/product3.jpg" alt="Product 3">
-      <img src="images/product4.jpg" alt="Product 4">
-      <img src="images/product5.jpg" alt="Product 5">
-      <img src="images/product6.jpg" alt="Product 6">
-      <img src="images/product7.jpg" alt="Product 7">
-      <img src="images/product8.jpg" alt="Product 8">
-      <img src="images/product9.jpg" alt="Product 9">
-      <img src="images/product10.jpg" alt="Product 10">
+  <!-- Contact 联系 -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea rows="5" placeholder="Message"></textarea>
+      <button>Send</button>
     </div>
+    <p>Website: lunara.dpdns.org</p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 LUNARA. All rights reserved.</p>
-  </footer>
 </body>
 </html>
