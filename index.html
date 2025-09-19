@@ -3,66 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LUNARA - Moonlight Beauty</title>
-  <link rel="stylesheet" href="style.css">
+  <title>LUNARA - Moonlight Series</title>
+  <!-- 样式表路径修正 -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- Banner 横幅 -->
+  <!-- 首页横幅 -->
   <section class="banner">
     <picture>
-      <!-- 竖屏 -->
-      <source srcset="images/banner-portrait.jpg" media="(max-aspect-ratio: 3/4)">
-      <!-- 横屏 -->
-      <img src="images/banner.jpg" alt="LUNARA Banner">
+      <!-- 竖屏优先 -->
+      <source srcset="images/banner-portrait.jpg" media="(orientation: portrait)">
+      <img src="images/banner.jpg" alt="Moonlight Banner" class="banner-img">
     </picture>
   </section>
 
-  <!-- Brand Philosophy 品牌理念 -->
-  <section id="brand">
-    <h2>브랜드 철학 (Brand Philosophy)</h2>
+  <!-- 品牌介绍 -->
+  <section class="brand-philosophy">
+    <h2>Brand Philosophy ｜ 브랜드 철학</h2>
     <p>
-      루나라(LUNARA)는 달의 여신에게서 영감을 받아 탄생했습니다.  
-      그녀는 순수함, 우아함, 그리고 강인함을 상징하며, 이는 곧 루나라가 추구하는 철학이기도 합니다.  
-      우리의 목표는 모든 여성이 일상 속에서 달빛처럼 빛나는 자신감을 느낄 수 있도록 하는 것입니다.
+      LUNARA draws inspiration from the moonlight — pure, elegant, and resilient.  
+      루나라의 모든 제품은 달빛의 영감을 받아, 순수함과 우아함, 그리고 강인함을 담아냅니다.
     </p>
   </section>
 
-  <!-- About Us 关于我们 -->
-  <section id="about">
-    <h2>About Us</h2>
+  <!-- 关于我们 -->
+  <section class="about-us">
+    <h2>About Us ｜ 우리 소개</h2>
     <p>
-      루나라는 한국에서 시작된 하이엔드 뷰티 브랜드로, 자연의 순수함과 첨단 기술을 결합하여  
-      아시아 여성의 피부에 최적화된 스킨케어와 메이크업 솔루션을 제공합니다.  
-      우리의 역사는 단순한 화장품을 넘어, 여성들이 아름다움과 자신감을 되찾을 수 있도록 돕는 여정입니다.
+      Founded with the spirit of Korean craftsmanship, LUNARA is more than beauty —  
+      it is confidence, radiance, and timeless elegance.  
+      한국의 장인 정신으로 탄생한 루나라는 단순한 뷰티 브랜드가 아니라,  
+      자신감과 빛나는 아름다움, 그리고 영원한 우아함을 상징합니다.
     </p>
   </section>
 
-  <!-- Products 产品展示 -->
-  <section id="products">
-    <h2>Our Collections</h2>
-    <div class="grid">
-      <div class="card"><img src="images/product1.jpg" alt=""><h3>Moonlight Hair Mask</h3><p>Silky & Nourishing</p></div>
-      <div class="card"><img src="images/product2.jpg" alt=""><h3>Moonlight Cream</h3><p>Hydrating & Repairing</p></div>
-      <div class="card"><img src="images/product3.jpg" alt=""><h3>Moonlight Lip Tint</h3><p>Velvet & Long-lasting</p></div>
-      <div class="card"><img src="images/product4.jpg" alt=""><h3>Moonlight Mask</h3><p>Deep Moisturizing</p></div>
-      <div class="card"><img src="images/product5.jpg" alt=""><h3>Moonlight Essence</h3><p>Brightening & Smoothing</p></div>
-      <div class="card"><img src="images/product6.jpg" alt=""><h3>Moonlight Cleanser</h3><p>Gentle Cleansing</p></div>
-      <div class="card"><img src="images/product7.jpg" alt=""><h3>Moonlight Shampoo</h3><p>Refreshing & Strengthening</p></div>
-      <div class="card"><img src="images/product8.jpg" alt=""><h3>Moonlight Body Wash</h3><p>Moisturizing & Scented</p></div>
-      <div class="card"><img src="images/product9.jpg" alt=""><h3>Moonlight Body Lotion</h3><p>Soft & Smooth Skin</p></div>
-      <div class="card"><img src="images/product10.jpg" alt=""><h3>Moonlight Lipstick</h3><p>Elegant & Vibrant</p></div>
+  <!-- 产品展示 -->
+  <section class="products">
+    <h2>Moonlight Collection ｜ 달빛 컬렉션</h2>
+    <div class="product-grid">
+      <div class="product"><img src="images/product1.jpg" alt="Moonlight Hair Mask"><p>月光发膜</p></div>
+      <div class="product"><img src="images/product2.jpg" alt="Moonlight Cream"><p>月光面霜</p></div>
+      <div class="product"><img src="images/product3.jpg" alt="Moonlight Lipstick"><p>月光口红</p></div>
+      <div class="product"><img src="images/product4.jpg" alt="Moonlight Tint"><p>月光唇釉</p></div>
+      <div class="product"><img src="images/product5.jpg" alt="Moonlight Body Lotion"><p>月光身体乳</p></div>
+      <div class="product"><img src="images/product6.jpg" alt="Moonlight Serum"><p>月光精华液</p></div>
+      <div class="product"><img src="images/product7.jpg" alt="Moonlight Face Wash"><p>月光洗面奶</p></div>
+      <div class="product"><img src="images/product8.jpg" alt="Moonlight Shampoo"><p>月光洗发水</p></div>
+      <div class="product"><img src="images/product9.jpg" alt="Moonlight Shower Gel"><p>月光沐浴露</p></div>
     </div>
   </section>
 
-  <!-- Muse 模特展示 -->
-  <section id="muse">
-    <h2>LUNARA Muse</h2>
-    <p>
-      루나라의 뮤즈는 우아함과 자신감을 상징합니다.  
-      그녀들의 빛은 달빛처럼 영원히 여성의 아름다움을 비춥니다.
-    </p>
-    <div class="carousel">
+  <!-- 模特展示 -->
+  <section class="muses">
+    <h2>Muses ｜ 뮤즈</h2>
+    <div class="muse-grid">
       <img src="images/muse1.jpg" alt="Muse 1">
       <img src="images/muse2.jpg" alt="Muse 2">
       <img src="images/muse3.jpg" alt="Muse 3">
@@ -70,17 +64,15 @@
     </div>
   </section>
 
-  <!-- Contact 联系 -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-form">
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="Email">
-      <textarea rows="5" placeholder="Message"></textarea>
-      <button>Send</button>
-    </div>
-    <p>Website: lunara.dpdns.org</p>
+  <!-- 留言 -->
+  <section class="contact">
+    <h2>Leave a Message ｜ 메시지 남기기</h2>
+    <form>
+      <input type="text" placeholder="Your Name ｜ 이름" required>
+      <input type="email" placeholder="Your Email ｜ 이메일" required>
+      <textarea placeholder="Your Message ｜ 메시지" required></textarea>
+      <button type="submit">Submit ｜ 제출하기</button>
+    </form>
   </section>
-
 </body>
 </html>
